@@ -15,7 +15,40 @@ e ~
   ~    limitations under the License.
   --%>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
+<header id="header">
+			<div class="panel">
+				<div class="holder">
+					<ul>
+						<li class="mobile"><a href="#">Back to home</a></li>
+						<li><a href="/site/myaccount/../#/contact_us">Contact Us</a></li>
+						<security:authorize access="isAuthenticated()">
+                        <li class="alt"><a id="logout" class="my-london-hydro" href="<c:url value='/logout.do'/>">Logout</a></li>
+                    </security:authorize>
+<security:authorize access="isAnonymous()">
+                        <li class="active alt"><a id="login" class="my-london-hydro" href="<c:url value='/login'/>">Login</a></li>
+                    </security:authorize>
+					</ul>
+				</div>
+			</div>
+			<div data-alert-bar alertmessage="ErrorService.errorMessage"></div>
+			<div data-success-bar alertmessage="ErrorService.successMessage"></div>
+			<div class="section">
+				<div class="holder" data-ng-controller="SearchController">
+					<h1 class="logo"><a href="/site/myaccount/..">London Hydro</a></h1>
+					<a href="/site/myaccount/.." class="back">&lt; Back to home</a>
+					<a href="#" class="btn-menu">menu</a>
+					<form class="search-form"  data-ng-submit="search();">
+						<fieldset>
+							<legend class="hide">search form</legend>
+							<input type="text" placeholder="How can we help you today?" title="How can we help you today?" data-ng-model="searchKey" />
+							<input type="submit" value="submit" />
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</header>
+
+<div class="navbar navbar-inverse ">
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">

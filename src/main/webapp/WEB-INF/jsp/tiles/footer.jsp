@@ -23,7 +23,7 @@
 
 		<ul class="inline">
 			<li><img src="<c:url value='/resources/ico/favicon.png'/>"
-				width="20" />&nbsp;<a href="http://www.greenbuttondata.org">Green Button for America</a></li>
+				width="20" />&nbsp;<a href="http://www.greenbuttondata.org">Green Button</a></li>
 			<li>|| <a href="<c:url value='/TermsOfService' />">Terms of Service</a></li>
 			<li>|| <a href="<c:url value='/UsagePolicy' />">Usage Policy</a></li>
 			<li>|| <a href="<c:url value='/about-version' />">About</a></li>

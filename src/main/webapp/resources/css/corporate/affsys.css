@@ -1,0 +1,184 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.time-form input[type="number"] {
+	display:block;
+	width:100%;
+	height:43px;
+	margin:0;
+	padding:10px 10px;
+	font-size:14px;
+	line-height:16px;
+	background:#ededed;
+	border-radius:3px;
+	border:1px solid #dcdddf;
+	outline:none;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.customer-error{
+	text-align:center;
+	padding:43px 7px 0 0;
+	width:291px;
+	color:#353942;
+	font-size:16px;
+	line-height:20px;
+	min-height:107px;
+}
+.customer-error{
+	color:#ed0008;
+	padding:20px 20px 0;
+	width:269px;
+	min-height:0px;
+}
+
+.time-form.successfull,
+.time-form.unsuccessfull{
+	font-weight:bold;
+	text-align:center;
+	padding:43px 7px 0 0;
+	width:291px;
+	color:#353942;
+	font-size:16px;
+	line-height:20px;
+	min-height:107px;
+}
+.time-form.successfull p{margin:0;}
+.time-form.unsuccessfull{
+	color:#ed0008;
+	padding:20px 20px 0;
+	width:269px;
+	min-height:130px;
+}
+
+.personal-block .activity{
+	padding:41px 9px 21px 48px;
+	width:113px;
+	line-height:17px;
+	font-size:14px;
+	color:#363a45;
+}
+.personal-block .activity .title{
+	display:block;
+	font-size:16px;
+	line-height:18px;
+	margin:0 0 1px;
+}
+.personal-block .activity p{margin:0;}
+.personal-block .Electricity{
+	padding:13px 14px 10px;
+	width:169px;
+}
+.personal-block .Electricity:before{
+	content:"";
+	float:left;
+	margin:4px 11px 0 0;
+	width:38px;
+	height:39px;
+	background:url(../../images/sprite.png) no-repeat -362px -829px;
+}
+.personal-block .Water{
+	width:178px;
+	padding:15px 4px 10px 14px;
+}
+.personal-block .Water:before{
+	background:url(../../images/sprite.png) no-repeat -314px -829px;
+	width:29px;
+	height:49px;
+	float:left;
+	margin:0 12px 0 0;
+	content:"";
+	overflow:hidden;
+	text-indent:-9999px;
+}
+.personal-block .boxes-section p{margin:0;}
+.personal-block .boxes-section .title{
+	display:block;
+	margin:14px 0 18px;
+	line-height:21px;
+	font-size:16px;
+	color:#383c46;
+}
+.personal-block .boxes-section .Water .title{margin-bottom:17px;}
+.personal-block .Electricity p{
+	margin:0;
+	color:#606572;
+}
+.personal-block .Payment{
+	padding:19px 19px 13px 14px;
+	width:164px;
+}
+.personal-block .Payment:before{
+	content:"";
+	float:left;
+	margin:-4px 11px 0 4px;
+	width:41px;
+	height:41px;
+	background:url(../../images/sprite.png) no-repeat -300px -450px;
+}
+
+.personal-block .Payment .title{
+	display:block;
+	margin:0 0 11px;
+	line-height:18px;
+	font-size:16px;
+	font-weight:bold;
+	color:#373b46;
+}
+.personal-block .Payment p{
+	margin:0;
+	color:#606572;
+}
+
+.personal-block .Account{
+	padding:13px 14px 10px;
+	width:169px;
+}
+.personal-block .Account:before{
+	content:"";
+	float:left;
+	margin:4px 11px 0 0;
+	width:38px;
+	height:39px;
+	background:url(../../images/sprite.png) no-repeat -362px -829px;
+}
+
+.loader {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -20px 0 0 -20px;
+	background:url(../../images/mini-ajax-loader.gif) 50% 50% no-repeat;
+	visibility: hidden;
+}
+
+.time-area .time{
+	position:relative;
+	padding:0 0 1px 21px;
+	height:40px;
+	font:40px/40px 'Share Tech Mono', Arial, Helvetica, sans-serif;
+	letter-spacing:-2px;
+	color:#fafafa;
+}
+
+.myLHIcon {
+	background:url(../../images/mylondonhydro-greenicon.png) no-repeat;
+	background-position: right top;
+	padding-right: 24px;
+	border: 0;
+}
+
+.redLHIcon {
+	background:url(../../images/mylondonhydro-redicon.png) no-repeat;
+	background-position: right top;
+	padding-right: 24px;
+	border: 0;
+}

@@ -27,6 +27,13 @@
     <link href="<c:url value='/resources/css/application.css' />" rel="stylesheet" type="text/css"/>
    <link href="<c:url value='/resources/css/bootstrap-datetimepicker.min.css' />" rel="stylesheet" type="text/css"/>
 
+    <link href="<c:url value='/resources/css/myaccount/affsys.css' />" rel="stylesheet" type="text/css"/>
+    <link href="<c:url value='/resources/css/myaccount/base.css' />" rel="stylesheet" type="text/css"/>
+    <link href="<c:url value='/resources/css/myaccount/fancybox.css' />" rel="stylesheet" type="text/css"/>
+    <link href="<c:url value='/resources/css/myaccount/myaccount.css' />" rel="stylesheet" type="text/css"/>
+    <link href="<c:url value='/resources/css/myaccount/overlays.css' />" rel="stylesheet" type="text/css"/>
+    <link href="<c:url value='/resources/css/myaccount/popup.css' />" rel="stylesheet" type="text/css"/>
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="<c:url value='/resources/js/html5shiv.js'/>"></script>
