@@ -25,6 +25,7 @@
 <jsp:include page="../../tiles/customer/header.jsp"/>
 
 <div class="container">
+<div class="balance-section">
     <div class="row">
         <div class="span12">
             <h2>Meter Reading: <c:out value="${meterReading.description}"/></h2>
@@ -114,6 +115,7 @@
 
             </div>
         </div>
+	</div>
     </div>
 
     <hr>

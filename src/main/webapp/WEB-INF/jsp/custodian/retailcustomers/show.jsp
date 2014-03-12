@@ -25,7 +25,8 @@
 
 <jsp:include page="/WEB-INF/jsp/tiles/custodian/header.jsp"/>
 
-<div class="container">
+<div class="container ">
+	<div class="balance-section">
 
     <a href="<c:url value='/custodian/retailcustomers/${retailCustomer.id}/usagepoints/form'/>" class="btn btn-large"><i class="icon-plus"></i>&nbsp;Add Usage Point</a>
 
@@ -35,6 +36,7 @@
             <h2><c:out value="${retailCustomer.firstName}"/> <c:out value="${retailCustomer.lastName}"/></h2>
 
         </div>
+	</div>
     </div>
 
     <hr>

@@ -35,6 +35,7 @@
 <jsp:include page="/WEB-INF/jsp/tiles/customer/header.jsp"/>
 
 <div class="container">
+	<div class="balance-section">
 
     <h1>Third Party List</h1>
 
@@ -64,9 +65,9 @@
         <input type="submit" name="next" value="Next" disabled="disabled" class="btn btn-primary">
     </form>
 
-
+	</div>
     <jsp:include page="/WEB-INF/jsp/tiles/footer.jsp"/>
-
+	
 </div>
 
 </body>

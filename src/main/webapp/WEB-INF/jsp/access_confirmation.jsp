@@ -31,6 +31,7 @@
 <jsp:include page="tiles/header.jsp"/>
 
 <div class="container">
+	<div class="balance-section ">
 
 
     <% if (session.getAttribute(WebAttributes.AUTHENTICATION_EXCEPTION) != null && !(session.getAttribute(WebAttributes.AUTHENTICATION_EXCEPTION) instanceof UnapprovedClientAuthenticationException)) { %>
@@ -63,6 +64,8 @@
             </label>
         </form>
     </authz:authorize>
+
+	</div>
 
     <jsp:include page="tiles/footer.jsp"/>
 

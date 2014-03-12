@@ -25,11 +25,11 @@
 
 <jsp:include page="tiles/header.jsp"/>
 
-<div class="container">
+<div class="container balance">
     <div class="content">
         <div class="row">
             <div class="span12">
-                <div class="login-form">
+                <div class="login-form balance-section">
                     <h2>Login</h2>
 
                     <c:if test="${not empty sessionScope.SPRING_SECURITY_LAST_EXCEPTION}">

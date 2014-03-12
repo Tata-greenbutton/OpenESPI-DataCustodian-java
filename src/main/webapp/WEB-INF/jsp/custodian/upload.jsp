@@ -27,14 +27,15 @@
 <jsp:include page="../tiles/custodian/header.jsp"/>
 
 <div class="container">
-    <div class="row">
+	<div class="balance-section">
+    <div class="row ">
         <div class="span12">
             <h2>Upload</h2>
 
             <form:form modelAttribute="uploadForm" class="form-horizontal" action="${pageContext.request.contextPath}/custodian/upload" enctype="multipart/form-data">
                 <form:errors path="*" cssClass="alert alert-error" element="div" />
 
-                <div class="control-group">
+                <div class="control-group ">
                     <label class="control-label" for="file">File</label>
                     <div class="controls">
                         <input type="file" name="file" />
@@ -43,6 +44,7 @@
                 </div>
             </form:form>
         </div>
+	</div>
     </div>
     <hr>
 

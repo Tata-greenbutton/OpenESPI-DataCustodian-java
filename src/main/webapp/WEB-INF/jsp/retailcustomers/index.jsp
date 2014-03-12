@@ -25,6 +25,7 @@
 <jsp:include page="../tiles/custodian/header.jsp"/>
 
 <div class="container">
+	<div class="balance-section">
     <div class="row">
         <div class="span12">
             <h2>Retail Customers</h2>
@@ -63,6 +64,7 @@
             </table>
         </div>
     </div>
+	</div>
 
     <hr>
 

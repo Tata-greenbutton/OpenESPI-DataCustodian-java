@@ -23,7 +23,11 @@
 <body>
 
 <jsp:include page="../../tiles/customer/header.jsp"/>
-<div style="margin-left: 40px;">
+
+<div class="container">
+	<div class="balance-section">
+
+	<div style="margin-left: 40px;">
 <table><tr><td>
 <a id = "downloadMyData" class="brand" href="<c:url value='/espi/1_1/resource/Batch/RetailCustomer/${currentCustomer.id}/UsagePoint'/>">
          <img src="<c:url value='/resources/img/Green_Download_265.png'/>" width="150"/></a>  
@@ -91,14 +95,14 @@
           });
       
     </script>
-<div class="container">
+
     <div class="row">
         <div class="span12">
             <h2>Usage Points</h2>
 
 
 
-            <table class="table table-striped">
+            <table class="table table-striped" style="width: 95%">
                 <thead>
                 <tr>
                     <th>Title</th>
@@ -121,6 +125,7 @@
                 </tbody>
             </table>
         </div>
+	</div>
     </div>
 
     <hr>

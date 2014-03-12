@@ -27,6 +27,7 @@
 <jsp:include page="../tiles/custodian/header.jsp"/>
 
 <div class="container">
+	<div class="balance-section ">
     <div class="row">
         <div class="span12">
             <h2>New Retail Customer</h2>
@@ -67,10 +68,12 @@
                 </div>
             </form:form>
 
+	</div>
+    </div>
+	</div>
+
             <jsp:include page="../tiles/footer.jsp"/>
 
-        </div>
-    </div>
 </div>
 
 </body>

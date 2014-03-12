@@ -95,12 +95,13 @@
     </script>
 <hr size="4" />
 <div class="container">
+	<div class="balance-section">
     <div class="row">
         <div class="span12">
             <h2>Usage Point: <c:out value="${displayBag.get('Description')}"/></h2>
             <p>Service Category: <c:out value="${displayBag.get('ServiceCategory')}"/></p>
 
-            <table class="table table-striped">
+            <table class="table table-striped" style="width: 95%">
                 <caption class="text-left">Meter Readings:</caption>
                 <thead>
                 <tr>
@@ -122,7 +123,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-striped">
+            <table class="table table-striped" style="width: 95%">
                 <caption class="text-left">Electric Power Usage Summaries:</caption>
                 <thead>
                 <tr>
@@ -148,7 +149,7 @@
                 </tbody>
             </table>
 
-            <table class="table table-striped">
+            <table class="table table-striped" style="width: 95%">
                 <caption class="text-left">Electric Power Quality Summaries:</caption>
                 <thead>
                 <tr>
@@ -173,7 +174,7 @@
                 </c:forEach>
                 </tbody>
             </table>
-            <table class="table table-striped">
+            <table class="table table-striped" style="width: 95%">
                 <caption class="text-left">Local Time Parameters:</caption>
                 <thead>
                 <tr>
@@ -189,6 +190,7 @@
                 </tbody>
             </table>
         </div>
+	</div>
     </div>
 
     <hr>

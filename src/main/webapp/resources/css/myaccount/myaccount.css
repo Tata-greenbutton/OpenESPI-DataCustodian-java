@@ -51,7 +51,7 @@
 	overflow:hidden;
 	text-indent:-9999px;
 	content:"";
-	background:url(../../images/myaccount/dashboard/icos2.png) no-repeat 999px 0;
+	background:url(../../img/icos2.png) no-repeat 999px 0;
 }
 .info-list .ico1 {line-height:18px;}
 .info-list .ico1:before {
@@ -138,14 +138,14 @@
 	left:-14px;
 	top:0;
 	content:"";
-	background:url(../../images/myaccount/dashboard/bg-shadow-left.png) no-repeat;
+	background:url(../../img/bg-shadow-left.png) no-repeat;
 	width:14px;
 	height:328px;
 }
 .balance-section:after {
 	left:auto;
 	right:-14px;
-	background:url(../../images/myaccount/dashboard/bg-shadow-right.png) no-repeat;
+	background:url(../../img/bg-shadow-right.png) no-repeat;
 }
 .balance-section .col {
 	float:right;
@@ -1537,14 +1537,14 @@ a.btn-pay:before {
 	left:-14px;
 	top:0;
 	content:"";
-	background:url(../../images/myaccount/dashboard/bg-shadow-left.png) no-repeat;
+	background:url(../../img/bg-shadow-left.png) no-repeat;
 	width:14px;
 	height:328px;
 }
 .balance-section:after {
 	left:auto;
 	right:-14px;
-	background:url(../../images/myaccount/dashboard/bg-shadow-right.png) no-repeat;
+	background:url(../../img/bg-shadow-right.png) no-repeat;
 }
 .balance-section .col {
 	float:right;
@@ -2302,6 +2302,7 @@ a.btn-pay:before {
 	margin:0;
 	font-style:normal;
 }
+/*
 .table-box {margin:0 -20px -10px;}
 .table {
 	border-collapse:collapse;
@@ -2331,7 +2332,7 @@ a.btn-pay:before {
 .table td + td + td {text-align:left;}
 .table th + th + th {
 	text-align:left;
-	/*text-indent:30px;*/
+	//text-indent:30px;
 }
 .table tr td:first-child,
 .table tr th:first-child {
@@ -2348,7 +2349,7 @@ a.btn-pay:before {
 	text-align:center;
 	font-weight:bold;
 	padding:16px 0 18px;
-}
+}*/
 .controls .pages {
 	display:block;
 	margin:0 0 11px;

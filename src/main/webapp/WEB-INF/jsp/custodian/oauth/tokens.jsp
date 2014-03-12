@@ -27,13 +27,15 @@
 <jsp:include page="/WEB-INF/jsp/tiles/custodian/oauth/header.jsp"/>
 
 <div class="container">
-    <div class="row">
+	<div class="balance-section">
+    <div class="row ">
         <div class="span12">
         	<br>
             <h2>OAuth Token Management</h2>
 
 
         </div>
+	</div>
     </div>
     <hr>
 

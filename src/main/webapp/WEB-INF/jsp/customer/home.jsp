@@ -28,7 +28,7 @@
 <div class="container">
 
     <!-- Main hero unit for a primary marketing message or call to action -->
-    <div class="hero-unit">
+    <div class="balance-section">
         <h1>Welcome Retail Customer</h1>
     </div>
 
