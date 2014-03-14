@@ -284,14 +284,14 @@ a:focus {
   min-height: 1px;
   margin-left: 20px;
 }
-
+/*
 .container,
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
 }
-
+*/
 .span12 {
   width: 940px;
 }
@@ -613,7 +613,7 @@ a:focus {
 .row-fluid [class*="span"].pull-right {
   float: right;
 }
-
+/*
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -647,7 +647,7 @@ a:focus {
 .container-fluid:after {
   clear: both;
 }
-
+*/
 p {
   margin: 0 0 10px;
 }
@@ -1995,14 +1995,14 @@ legend + .control-group {
 }
 
 table {
-  max-width: 95% !important;
+  max-width: 85% !important;
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 .table {
-  width: 95% !important;
+  width: 85% !important;
   margin-bottom: 20px;
 }
 
@@ -4404,11 +4404,11 @@ input[type="submit"].btn.btn-mini {
 .navbar-inner:after {
   clear: both;
 }
-
+/*
 .navbar .container {
   width: auto;
 }
-
+*/
 .nav-collapse.collapse {
   height: auto;
   overflow: visible;
@@ -4570,13 +4570,13 @@ input[type="submit"].btn.btn-mini {
      -moz-border-radius: 0;
           border-radius: 0;
 }
-
+/*
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
 }
-
+*/
 .navbar-fixed-top {
   top: 0;
 }

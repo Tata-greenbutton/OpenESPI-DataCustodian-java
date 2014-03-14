@@ -48,7 +48,7 @@ e ~
 			</div>
 		</header>
 
-<div class="navbar navbar-inverse ">
+<!--<div class="navbar navbar-inverse ">
     <div class="navbar-inner">
         <div class="container">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -73,4 +73,20 @@ e ~
             </div>
         </div>
     </div>
-</div>
+</div>-->
+<aside id="slide-menu" class="sidebar" >
+<nav class="ng-scope">
+	<ul class="menu" >
+		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/home'/>" class="ico5">Data Custodian Home</a></li>
+		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/UsagePoint'/>" class="ico5">Usage Points</a></li>
+		<security:authorize access="isAuthenticated()">
+		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/ThirdPartyList'/>" class="ico5">Third Parties</a></li> 
+		<li><a id="logout" href="<c:url value='/logout.do'/>" class="ico5">Logout</a></li>
+                <li><a id="profile" href="" class="ico5">Welcome: ${currentCustomer.firstName} ${currentCustomer.lastName}</a></li>
+		</security:authorize>
+                <security:authorize access="isAnonymous()">
+                <li><a id="login" href="<c:url value='/login'/>" class="ico5">Login</a></li>
+                </security:authorize>
+	</ul>
+</nav>
+</aside>

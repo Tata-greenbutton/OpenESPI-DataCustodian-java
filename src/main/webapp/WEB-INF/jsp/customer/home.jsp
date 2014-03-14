@@ -25,7 +25,7 @@
 
 <jsp:include page="/WEB-INF/jsp/tiles/customer/header.jsp"/>
 
-<div class="container">
+<div class="container ">
 
     <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="balance-section">

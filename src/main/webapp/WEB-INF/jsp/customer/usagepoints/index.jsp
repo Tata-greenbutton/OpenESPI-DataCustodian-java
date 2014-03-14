@@ -102,7 +102,7 @@
 
 
 
-            <table class="table table-striped" style="width: 95%">
+            <table class="table table-striped" style="width: 85%">
                 <thead>
                 <tr>
                     <th>Title</th>
