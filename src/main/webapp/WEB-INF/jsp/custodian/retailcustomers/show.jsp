@@ -30,13 +30,32 @@
 
     <a href="<c:url value='/custodian/retailcustomers/${retailCustomer.id}/usagepoints/form'/>" class="btn btn-large"><i class="icon-plus"></i>&nbsp;Add Usage Point</a>
 
-    <div class="row">
-        <div class="span12">
-
             <h2><c:out value="${retailCustomer.firstName}"/> <c:out value="${retailCustomer.lastName}"/></h2>
+	
+<p>Authorizations</p>
 
-        </div>
-	</div>
+            <table class="table table-striped" id="authorizations">
+                <thead>
+                <tr>
+                    <th>DC</th>
+		    <th>TP</th>
+                    <th>Access Token</th>
+                    <th>Status</th>
+                    <th>Subscription ID</th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:forEach var="authorization" items="${authorizationList}">
+                    <tr>
+                        <td class="data_custodian"><c:out value="${authorization.applicationInformation.dataCustodianId}"/></td>
+			<td name="third_party" class="data_custodian"><c:out value="${authorization.applicationInformation.thirdPartyApplicationName}"/></td>
+                        <td class="access_token"><c:out value="${authorization.accessToken}"/></td>
+                        <td class="status"><c:out value="${authorization.status}"/></td>
+                        <td class="subscription_id"><c:out value="${authorization.resourceURI}"/></td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
     </div>
 
     <hr>

@@ -19,6 +19,10 @@ package org.energyos.espi.datacustodian.web.custodian;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 
+import org.springframework.security.core.Authentication;
+import org.energyos.espi.common.domain.Authorization;
+import org.energyos.espi.common.service.AuthorizationService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.energyos.espi.common.domain.RetailCustomer;
 import org.energyos.espi.common.domain.Routes;
 import org.energyos.espi.common.service.RetailCustomerService;
@@ -40,6 +44,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @PreAuthorize("hasRole('ROLE_CUSTODIAN')")
 public class RetailCustomerController extends BaseController {
+
+    @Autowired
+    private AuthorizationService authorizationService;
 
     @Resource
     private RetailCustomerService service;
@@ -84,6 +91,7 @@ public class RetailCustomerController extends BaseController {
     @RequestMapping(value = Routes.DATA_CUSTODIAN_RETAIL_CUSTOMER_SHOW, method = RequestMethod.GET)
     public String show(@PathVariable Long retailCustomerId, ModelMap model) {
         RetailCustomer retailCustomer = service.findById(retailCustomerId);
+	model.put("authorizationList", authorizationService.findAllByRetailCustomerId(retailCustomerId));
         model.put("retailCustomer", retailCustomer);
         return "/custodian/retailcustomers/show";
     }
