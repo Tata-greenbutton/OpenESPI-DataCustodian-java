@@ -81,6 +81,7 @@
                         <thead>
                         <tr>
                             <th>Cost</th>
+			    <th>Usage</th>
                             <th>Duration</th>
                             <th>Start</th>
                             <th>Reading Qualities</th>
@@ -91,6 +92,9 @@
                             <tr>
                                 <td>
                                     <c:out value="${intervalReading.cost}"/>
+                                </td>
+				<td>
+                                    <c:out value="${intervalReading.value}"/>
                                 </td>
                                 <td>
                                     <c:out value="${intervalReading.timePeriod.duration}"/>
