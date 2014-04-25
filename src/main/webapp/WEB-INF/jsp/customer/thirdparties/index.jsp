@@ -44,7 +44,9 @@
             <thead>
             <tr>
                 <th>Third Party</th>
-                <th>URL</th>
+		<th>Type</th>
+                <th>Description</th>
+		<th>Use</th>
             </tr>
             </thead>
             <tbody>
@@ -53,10 +55,13 @@
                     <td>
                         <label>
                             <input type="radio" name="Third_party" value="${applicationInformation.id}" data-third-party-url="${applicationInformation.thirdPartyScopeSelectionScreenURI}" class="third-party" />
+			    <img alt="logo" src="${applicationInformation.logoUri}" />
                             <c:out value="${applicationInformation.thirdPartyApplicationName}"/>
                         </label>
                     </td>
-                    <td><c:out value="${applicationInformation.thirdPartyScopeSelectionScreenURI}"/></td>
+		    <td><c:out value="${applicationInformation.thirdPartyApplicationType}"/></td>
+                    <td><c:out value="${applicationInformation.thirdPartyApplicationDescription}"/></td>
+		    <td><c:out value="${applicationInformation.thirdPartyApplicationUse}"/></td>
                 </tr>
             </c:forEach>
             </tbody>
