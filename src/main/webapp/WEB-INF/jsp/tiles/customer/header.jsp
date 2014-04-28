@@ -77,11 +77,11 @@ e ~
 <aside id="slide-menu" class="sidebar" >
 <nav class="ng-scope">
 	<ul class="menu" >
-		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/home'/>" class="ico5">Data Custodian Home</a></li>
-		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/UsagePoint'/>" class="ico5">Usage Points</a></li>
+		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/home'/>" class="ico5"><img src="<c:url value='/resources/img/home.png'/>" height=20 width=20 />&nbsp;DC Home</a></li>
+		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/UsagePoint'/>" class="ico5"><img src="<c:url value='/resources/img/plug.png'/>" height=20 width=20 />&nbsp;Usage Points</a></li>
 		<security:authorize access="isAuthenticated()">
-		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/ThirdPartyList'/>" class="ico5">Third Parties</a></li>
-		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/AuthorizedThirdParties'/>" class="ico5">Authorizations</a></li> 
+		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/ThirdPartyList'/>" class="ico5"><img src="<c:url value='/resources/img/list.png'/>" height=20 width=20 />&nbsp;Third Parties</a></li>
+		<li><a href="<c:url value='/RetailCustomer/${currentCustomer.id}/AuthorizedThirdParties'/>" class="ico5"><img src="<c:url value='/resources/img/key.png'/>" height=20 width=20 />&nbsp;Authorizations</a></li> 
 		<li><a id="logout" href="<c:url value='/logout.do'/>" class="ico5">Logout</a></li>
                 <li><a id="profile" href="" class="ico5">Welcome: ${currentCustomer.firstName} ${currentCustomer.lastName}</a></li>
 		</security:authorize>
