@@ -36,6 +36,7 @@
                     <th>Access Token</th>
                     <th>Status</th>
                     <th>Subscription ID</th>
+		    <th>Revoke</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -46,6 +47,13 @@
                         <td class="access_token"><c:out value="${authorization.accessToken}"/></td>
                         <td class="status"><c:out value="${authorization.status}"/></td>
                         <td class="subscription_id"><c:out value="${authorization.resourceURI}"/></td>
+			<td><button type="button" onclick="$.ajax({
+    url: '/DataCustodian/espi/1_1/resource/Authorization/${authorization.id}',
+    type: 'DELETE',
+    success: function(result) {
+        location.reload();
+    }
+});">Revoke</button></td>
                     </tr>
                 </c:forEach>
                 </tbody>
